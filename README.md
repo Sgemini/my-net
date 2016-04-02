@@ -1,2 +1,1 @@
-# backbone-maronette
-backbone + marionette js tutorial
+# My Net
