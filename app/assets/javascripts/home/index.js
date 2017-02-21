@@ -1,0 +1,1 @@
+alert('这是index页面的js文件');

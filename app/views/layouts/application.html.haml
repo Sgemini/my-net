@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title Intranet
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', type: 'text/css'
+    = javascript_include_tag 'application'
+    %script{:src=>"http://api.map.baidu.com/api?v=2.0&ak=B1weXcb1HCbLQhiXaqGklGGp"}
+    = csrf_meta_tags
+  %body{class: @page_classes, id: @body_id}
+    .intranet-container
+      = yield
+
+      = include_gon
+
+    = yield :footerhaml
