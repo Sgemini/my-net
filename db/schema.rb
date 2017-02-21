@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 20170221152704) do
   enable_extension "plpgsql"
 
   create_table "live_tips", force: :cascade do |t|
+    t.string "title"
+    t.text   "body"
   end
 
 end
