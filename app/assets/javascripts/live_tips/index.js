@@ -1,0 +1,1 @@
+alert('这是文浩的live tips首页')；
