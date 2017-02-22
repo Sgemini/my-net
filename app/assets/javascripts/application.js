@@ -13,10 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require live_tips/
-//= require_tree .
-//=
-//=
+//= require home
+//= require paradise
 //=
 //=
 //=
