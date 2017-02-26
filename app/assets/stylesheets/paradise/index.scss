@@ -7,6 +7,12 @@ ol,ul{ list-style:none; }
   }
 
   .net-section {
-		margin: 0 auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 980px) {
+    .nav-bar {
+      background: green;
+    }
   }
 }
