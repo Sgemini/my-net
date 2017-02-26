@@ -2,17 +2,19 @@ body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input{ margi
 ol,ul{ list-style:none; }
 
 #paradise-index {
+  background: deepskyblue;
   .nav-bar {
-
+    top: 25%;
+    .nav-item {
+      margin: 20px 0;
+    }
   }
 
   .net-section {
-    margin: 0 auto;
   }
 
   @media (min-width: 980px) {
     .nav-bar {
-      background: green;
     }
   }
 }
