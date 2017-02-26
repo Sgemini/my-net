@@ -17,4 +17,4 @@
 /tmp
 
 # Ignore some not use file
-/app/views/.DS_Store
+.DS_Store
