@@ -1,16 +1,36 @@
-body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input{ margin:0; padding:0; }
-ol,ul{ list-style:none; }
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input{ margin: 0; padding: 0; }
+ol,ul{ list-style: none; }
 
 #paradise-index {
-  background: deepskyblue;
   .nav-bar {
-    top: 25%;
+    top: 35%;
     .nav-item {
+      text-align: right;
       margin: 20px 0;
+      margin-right: -40px;
+    }
+  }
+
+  header{
+    background: cadetblue;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  .site-bar {
+    background: yellow;
+    &:hover{
+      opacity: 0.5;
     }
   }
 
   .net-section {
+     background: pink;
+     margin-right: 8%;
+     &:hover{
+      opacity: 0.5;
+    }
   }
 
   @media (min-width: 980px) {
