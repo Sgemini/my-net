@@ -1,0 +1,2 @@
+class CatesController < ApplicationController
+end
