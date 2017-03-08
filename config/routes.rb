@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   get '/paradise' => 'paradise#index'
 
   get '/yang-web' => 'yang_web#index'
+
+  namespace :admin do
+    get '/' => 'admin#index'
+  end
 end
