@@ -18,3 +18,4 @@
 
 # Ignore some not use file
 .DS_Store
+.env
