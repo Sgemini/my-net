@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get '/yang-web' => 'yang_web#index'
 
-  namespace :admin do
-    get '/' => 'admin#index'
+  scope :admin do
+    get '/cates' => 'admin#cates'
   end
 end
