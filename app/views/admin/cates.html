@@ -1,0 +1,28 @@
+<div id='admin-header'>
+  <%= render partial: "header" %>
+</div>
+
+<div class='cates-index'>
+  <% if @all_cates.present? %>
+    <ul>
+      <% @all_cates.each do |cate| %>
+        <li></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <div>no cates</div>
+  <% end %>
+</div>
+
+<div class='cates-new'>
+  <div class='new-header'>new record</div>
+  <%= form_tag("/admin/cates", method: "post", class: 'new-form') do %>
+    <% Cate.column_names.each do |column| %>
+      <div class="input-group">
+        <span class="input-group-addon column-item" id="<%= column %>"><%= column %></span>
+        <input type="text" class="form-control" placeholder="<%= column %>" aria-describedby="basic-addon1">
+      </div>
+    <% end %>
+    <%= submit_tag("submit") %>
+  <% end %>
+</div>

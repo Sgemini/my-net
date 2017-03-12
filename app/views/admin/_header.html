@@ -1,0 +1,11 @@
+<header>
+  <h1>admin后台</h1>
+  <a href='/'>return</a>
+</header>
+<nav>
+  <ul class="nav nav-tabs all-tables">
+    <% @all_tables.each do |table| %>
+      <li class="table-name"><a href="/<%= table.tr('_', '-') %>"><%= table.titleize.tr('_', ' ') %></a></li>
+    <% end %>
+  </ul>
+</nav>
