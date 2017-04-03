@@ -4,6 +4,12 @@ class AdminController < ApplicationController
 
   def cates
     @all_cates = Cate.all
+    create_cates if params[:cates] == 'new'
+  end
+
+  def cates_create
+    binding.pry
+    # Cate.crate()
   end
 
   private
