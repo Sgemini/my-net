@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
   scope :admin do
     get '/cates' => 'admin#cates'
+    post '/cates' => 'admin#cates_create'
   end
 end
