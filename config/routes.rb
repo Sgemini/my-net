@@ -5,9 +5,4 @@ Rails.application.routes.draw do
   get '/paradise' => 'paradise#index'
 
   get '/yang-web' => 'yang_web#index'
-
-  scope :admin do
-    get '/cates' => 'admin#cates'
-    post '/cates' => 'admin#cates_create'
-  end
 end
