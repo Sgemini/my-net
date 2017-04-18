@@ -18,14 +18,15 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'config'
 
-# env variable
-gem 'dotenv-rails', group: [:development, :test]
+gem 'activeadmin', github: 'activeadmin'
 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry-byebug'
+  # env variable
+  gem 'dotenv-rails'
 end
 
 group :development do

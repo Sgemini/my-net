@@ -1,4 +1,4 @@
 class CatesIngredientsMap < ActiveRecord::Base
-  belongs_to :cates
-  belongs_to :ingredients
+  belongs_to :cate
+  belongs_to :ingredient
 end
