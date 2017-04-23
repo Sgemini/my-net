@@ -39,5 +39,5 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.assets.precompile += %w( home/index.js live_tips/index.js paradise/index.js yang_web/index.js)
+  config.assets.precompile += %w( home/index.js live_tips/index.js paradise/index.js yang_web/index.js yang_web/index.js)
 end
