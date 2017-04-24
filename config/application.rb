@@ -8,6 +8,13 @@ Bundler.require(*Rails.groups)
 
 module MyNet
   class Application < Rails::Application
+    config.assets.precompile += [
+      'home/index.js',
+      'live_tips/index.js',
+      'paradise/index.js',
+      'yang_web/index.js',
+      'yang_web/tools.js'
+    ]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
