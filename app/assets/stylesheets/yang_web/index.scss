@@ -6,7 +6,7 @@
     height: 100%;
     min-height: 768px;
     overflow: hidden;
-    background: url(../img/bg.jpg) no-repeat center center;
+    background: url(http://i1.piimg.com/592252/407b44968d778cbas.jpg) no-repeat center center;
     background-size:cover;
   }
 
@@ -53,7 +53,7 @@
     margin-left: -50px;
     width: 100px;
     height: 100px;
-    background: url(../img/alert/alert_top.png) no-repeat;
+    background: url(http://i4.buimg.com/592252/9ec1393f3bc517ffs.png) no-repeat;
     background-size: contain;
   }
 
@@ -154,7 +154,7 @@
   .nav1 .text {
     width: 100px;
     height: 100px;
-    background:url(../img/nav_ico/新闻.png) no-repeat center center;
+    background:url(http://i4.buimg.com/592252/2e73b3a8dbf8b523s.png) no-repeat center center;
     background-size: contain;
     border-radius: 50%;
   }
@@ -176,7 +176,7 @@
   .nav2 .text {
     width: 100px;
     height: 100px;
-    background:url(../img/nav_ico/图片.png) no-repeat center center;
+    background:url(http://i4.buimg.com/592252/b53655953c6e4d56s.png) no-repeat center center;
     background-size: contain;
     border-radius: 50%;
   }
@@ -198,7 +198,7 @@
   .nav3 .text {
     width: 100px;
     height: 100px;
-    background:url(../img/nav_ico/游戏.png) no-repeat center center;
+    background:url(http://i4.buimg.com/592252/8f734b2ec917ca54s.png) no-repeat center center;
     background-size: contain;
     border-radius: 50%;
   }
@@ -220,7 +220,7 @@
   .nav4 .text {
     width: 100px;
     height: 100px;
-    background:url(../img/nav_ico/公文包.png) no-repeat center center;
+    background:url(http://i4.buimg.com/592252/0ad086d83a09f5e7s.png) no-repeat center center;
     background-size: contain;
     border-radius: 50%;
   }
@@ -228,18 +228,23 @@
 
   /*-------------------------------搜索菜单------------------------------------------------------*/
   .search_content,.search_content input,.search_content a,.search_content .search_bg,.active input,.active a,.active .search_bg{transition:.5s linear;}
-  .search_ico {float: left;width: 162px;height:40px;background: url(../img/baidu.png) no-repeat;}
+  .search_ico {
+    float: left;
+    width: 162px;
+    height:40px;
+    background: url(http://i1.piimg.com/592252/455a6db3c0679f18s.png) no-repeat;
+    }
 
 
   #search {position: absolute;width:50%;height:100px;}
   .search_content {float: left;height: 36px;position: relative;}
   .search_content input {border: none;width:100px;height: 36px;float: left;opacity: 0;}
-  .search_content a {float: left;width: 57px;height: 36px;background:url(../img/input_ico.png) no-repeat;z-index: 1;cursor: pointer;}
+  .search_content a {float: left;width: 57px;height: 36px;background:url(http://i1.piimg.com/592252/b52ba90db719c72as.png) no-repeat;z-index: 1;cursor: pointer;}
   .search_content .search_bg {position: absolute;height: 2px;width: 137px;background: white;bottom: 0px;left: 0px;background: #FFFFFF;}
 
 
   .active input {border: none;width:80%;height: 36px;float: left;opacity: 1;}
-  .active a {float: left;width: 57px;height: 36px;background:url(../img/input_ico_active.gif) no-repeat;z-index: 1;}
+  .active a {float: left;width: 57px;height: 36px;background:url(http://i1.piimg.com/592252/774fbe51f5692778.gif) no-repeat;z-index: 1;}
   .active .search_bg {position: absolute;height: 2px;width: 257px;background: white;bottom: 0px;opacity: 0;}
 
   #search-list {width: 418px;margin-left: 161px;margin-top: -1px;background: white;display: none;}
@@ -283,6 +288,7 @@
     width: 191px;
     height: 380px;
     will-change:transform;
+    border-radius: 25px;
     -webkit-transition: all .4s cubic-bezier(0,.68,.86,.98);
     transition: all .4s cubic-bezier(0,.68,.86,.98);
     cursor: pointer;
@@ -290,38 +296,38 @@
   }
 
   .list li:nth-child(1) >div {
-    background: url(../img/1-1.png) no-repeat;
+    background: url(http://i1.piimg.com/592252/ea81c7bb1aa46e72s.png) no-repeat;
     background-size: cover;
     -webkit-transform: translate3d( 0px,61%,0px);
   }
 
   .list li:nth-child(2) >div{
-    background: url(../img/2-2.png) no-repeat;
+    background: url(http://i1.piimg.com/592252/2e01b3c7d2fb31a0s.png) no-repeat;
     background-size:cover;
     -webkit-transform: translate3d( 0px,47%,0px);
   }
   .list li:nth-child(3) >div{
-    background: url(../img/3-3.png) no-repeat;
+    background: url(http://i1.piimg.com/592252/e4f633ff0be1547cs.png) no-repeat;
     background-size:cover;
     -webkit-transform: translate3d( 0px,67%,0px);
   }
   .list li:nth-child(4) >div{
-    background: url(../img/4-4.png) no-repeat;
+    background: url(http://i1.piimg.com/592252/c850b56a528b341as.png) no-repeat;
     background-size:cover;
     -webkit-transform: translate3d( 0px,47%,0px);
   }
   .list li:nth-child(5) >div{
-    background: url(../img/5-5.png) no-repeat;
+    background: url(http://i1.piimg.com/592252/478090424bd49731s.png) no-repeat;
     background-size:cover;
     -webkit-transform: translate3d( 0px,27%,0px);
   }
   .list li:nth-child(6) >div{
-    background: url(../img/6-6.png) no-repeat;
+    background: url(http://i1.piimg.com/592252/b0d9152cd1af0fc7s.png) no-repeat;
     background-size:cover;
     -webkit-transform: translate3d( 0px,47%,0px);
   }
   .list li:nth-child(7) >div{
-    background: url(../img/7-7.png) no-repeat;
+    background: url(http://i1.piimg.com/592252/d93a8927e45400a3s.png) no-repeat;
     background-size:cover;
     -webkit-transform: translate3d( 0px,61%,0px);
   }
@@ -353,7 +359,7 @@
   }
 
   .list li .Pic {
-    background: url(../img/Pic01.jpg) no-repeat;
+    background: url(http://i1.piimg.com/592252/1ebfaf8496b327b6s.jpg) no-repeat;
     background-size: contain;
     width: 150px;
     height: 100px;
@@ -373,7 +379,7 @@
 
   #weather p span {margin-left: 10px;}
   #weather p em {font-style: normal;}
-  #weather .weather-ico {width: 30px;height: 30px;float: right;background:url(../img/0.png) no-repeat;background-size: contain;margin-right: 10px;}
+  #weather .weather-ico {width: 30px;height: 30px;float: right;background:url(http://i1.piimg.com/592252/069a03d05a65855ds.png) no-repeat;background-size: contain;margin-right: 10px;}
 
   #weather .show {animation: show .8s;transform: rotateX(0deg);opacity: 1;}
   #weather .hidden {animation: hidden .5s;transform: rotateX(-130deg);opacity: 0;}
