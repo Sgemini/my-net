@@ -20,6 +20,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'config'
 
 gem 'activeadmin', github: 'activeadmin'
+gem 'cancancan'
+gem 'bcrypt'
 
 gem 'puma'
 
