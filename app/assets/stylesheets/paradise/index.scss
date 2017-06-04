@@ -1,38 +1,77 @@
 #paradise-index {
   .nav-bar {
+    position: fixed;
     top: 35%;
+    right: 0;
     .nav-item {
-      text-align: right;
+      min-width: 60px;
       margin: 20px 0;
       margin-right: -40px;
-      min-width: 60px;
+
+      text-align: right;
     }
   }
 
   header{
+    float: right;
+
+    width: 70%;
+    height: 100px;
+
     background: cadetblue;
-    &:hover{
-      opacity: 0.5;
+
+    .title {
+      height: 100%;
+
+      line-height: 100px;
+      text-align: center;
     }
   }
 
   .site-bar {
+    float: left;
+
+    width: 30%;
+    height: 1000px;
+
     background: yellow;
-    &:hover{
-      opacity: 0.5;
-    }
   }
 
-  .net-section {
-     background: pink;
-     margin-right: 8%;
-     &:hover{
-      opacity: 0.5;
+  .main {
+    float: right;
+
+    width: 58%;
+    height: 1000px;
+    margin-right: 8%;
+    padding: 10px;
+
+    background: pink;
+
+    section {
+      margin-bottom: 40px;
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .section-item {
+        line-height: 30px;
+      }
+      .more {
+        float: right;
+
+        padding-right: 20px;
+      }
     }
   }
 
   @media (min-width: 980px) {
     .nav-bar {
     }
+  }
+
+  @media (max-width: 780px) {
+
   }
 }

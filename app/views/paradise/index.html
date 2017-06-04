@@ -1,21 +1,40 @@
-<aside class="site-bar", style="width: 30%; height: 1000px; float: left;">
+<aside class="site-bar">
 </aside>
 
-<header style="width: 70%; height: 100px; float: right;"></header>
+<header>
+  <h1 class='title'>饮食园地</h1>
+</header>
 
-<nav class="nav-bar", style="position: fixed; right: 0;">
+<nav class="nav-bar">
   <ul>
-    <li class="nav-item"><a href='/paradise/cates' class='btn btn-default'>美食</a></li>
-    <li class="nav-item"><button class='btn btn-default'>食材百科</button></li>
-    <li class="nav-item"><button class='btn btn-default'>敬请期待</button></li>
-    <li class="nav-item"><button class='btn btn-default'>敬请期待</button></li>
-    <li class="nav-item"><button class='btn btn-default'>敬请期待</button></li>
+    <li class="nav-item"><a id='cates' class='btn btn-default' data-cates>美食百科</a></li>
+    <li class="nav-item"><a class='btn btn-default'>食材百科</a></li>
+    <li class="nav-item"><a class='btn btn-default'>敬请期待</a></li>
+    <li class="nav-item"><a class='btn btn-default'>敬请期待</a></li>
+    <li class="nav-item"><a class='btn btn-default'>敬请期待</a></li>
   </ul>
 </nav>
 
-<section class="net-section", style="width: 58%; height: 1000px; float: right;">
-  
-</section>
+<main class="main">
+  <section class='cates'>
+    <h2 class='section-title'>饮食新资讯</h2>
+    <ul>
+      <% @cates.each do |cate| %>
+        <li class='section-item'><%= cate.title %></li>
+      <% end %>
+    </ul>
+    <a class='more' href="/paradise/cates">更多</a>
+  </section>
+  <section class='ingredients'>
+    <h2 class='section-title'>食材新资讯</h2>
+    <ul>
+      <% @ingredients.each do |ingredient| %>
+        <li class='section-item'><%= ingredient.name %></li>
+      <% end %>
+    </ul>
+    <a class='more' href="/paradise/ingredients">更多</a>
+  </section>
+</main>
 
 
 <div class="personal-menu">
