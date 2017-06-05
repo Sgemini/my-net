@@ -31,6 +31,7 @@ group :development, :test do
   gem 'pry-byebug'
   # env variable
   gem 'dotenv-rails'
+  gem 'rubocop', require: false
 end
 
 group :development do

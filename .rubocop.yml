@@ -1,0 +1,13 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'coverage/**/*'
+    - 'public/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
