@@ -20,7 +20,7 @@
     <h2 class='section-title'>饮食新资讯</h2>
     <ul>
       <% @cates.each do |cate| %>
-        <li class='section-item'><%= cate.title %></li>
+        <li class='section-item'><a href="/paradise/cates/<%= cate.id %>"+><%= cate.title %></li>
       <% end %>
     </ul>
     <a class='more' href="/paradise/cates">更多</a>
