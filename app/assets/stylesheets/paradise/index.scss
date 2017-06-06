@@ -1,14 +1,27 @@
 #paradise-index {
   .nav-bar {
-    position: fixed;
-    top: 35%;
-    right: 0;
-    .nav-item {
-      min-width: 60px;
-      margin: 20px 0;
-      margin-right: -40px;
+    float: left;
 
-      text-align: right;
+    width: 30%;
+    height: 1000px;
+    padding-top: 100px;
+
+    background: cadetblue;
+
+    .menu {
+      width: 100%;
+
+      .menu-item {
+        width: 100%;
+        margin: 20px 0;
+        padding-left: 20px;
+
+        font-size: 18px;
+
+        a {
+          color: white;
+        }
+      }
     }
   }
 
@@ -18,7 +31,7 @@
     width: 70%;
     height: 100px;
 
-    background: cadetblue;
+    background: #f51;
 
     .title {
       height: 100%;
@@ -26,15 +39,6 @@
       line-height: 100px;
       text-align: center;
     }
-  }
-
-  .site-bar {
-    float: left;
-
-    width: 30%;
-    height: 1000px;
-
-    background: yellow;
   }
 
   .main {
@@ -45,7 +49,7 @@
     margin-right: 8%;
     padding: 10px;
 
-    background: pink;
+    background: #ff3;
 
     section {
       margin-bottom: 40px;
