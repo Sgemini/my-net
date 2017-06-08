@@ -1,50 +1,8 @@
 #paradise-index {
-  .nav-bar {
-    float: left;
-
-    width: 30%;
-    height: 1000px;
-    padding-top: 100px;
-
-    background: cadetblue;
-
-    .menu {
-      width: 100%;
-
-      .menu-item {
-        width: 100%;
-        margin: 20px 0;
-        padding-left: 20px;
-
-        font-size: 18px;
-
-        a {
-          color: white;
-        }
-      }
-    }
-  }
-
-  header{
-    float: right;
-
-    width: 70%;
-    height: 100px;
-
-    background: #f51;
-
-    .title {
-      height: 100%;
-
-      line-height: 100px;
-      text-align: center;
-    }
-  }
-
   .main {
     float: right;
 
-    width: 58%;
+    width: 64%;
     height: 1000px;
     margin-right: 8%;
     padding: 10px;

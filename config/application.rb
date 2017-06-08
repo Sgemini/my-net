@@ -14,7 +14,8 @@ module MyNet
       'paradise/index.js',
       'yang_web/index.js',
       'yang_web/tools.js',
-      'cates.js'
+      'cates.js',
+      'ingredients.js'
     ]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
