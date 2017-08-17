@@ -1,4 +1,4 @@
-class CreateLiveTips < ActiveRecord::Migration
+class CreateLiveTips < ActiveRecord::Migration[5.0]
   def change
     create_table :live_tips do |t|
     	t.string :title
