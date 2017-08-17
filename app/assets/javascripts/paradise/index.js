@@ -1,2 +1,7 @@
-// alert('这是我的天堂');
-console.log($('.nav-bar ul li:first-child a').data());
+console.log('paradise index');
+(() => {
+  setTimeout(() => {
+    let slider = document.getElementByClassName('slide-item');
+    console.log(slider)
+  }, 3000)
+});

@@ -1,13 +1,6 @@
 #paradise-index {
   .main {
-    float: right;
-
-    width: 64%;
-    height: 1000px;
-    margin-right: 8%;
-    padding: 10px;
-
-    background: #ff3;
+    padding: 0 10%;
 
     section {
       margin-bottom: 40px;
@@ -24,6 +17,66 @@
         float: right;
 
         padding-right: 20px;
+      }
+    }
+
+    .slide-container{
+      position: relative;
+      .arrow {
+        position: absolute;
+        top: 40%;
+        font-size: 40px;
+        opacity: .5;
+        cursor: pointer;
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
+      }
+
+      .slide-item {
+        display: none;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        line-height: 260px;
+      }
+
+      #item1 {
+        background-color: aliceblue;
+      }
+      #item2 {
+        background-color: antiquewhite;
+      }
+      #item3 {
+        background-color: beige;
+      }
+      #item4 {
+        background-color: cadetblue;
+      }
+      #item5 {
+        background-color: darksalmon;
+      }
+
+      .slide-dot-container {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        .slide-dot {
+          display: flex;
+          width: 100px;
+          margin: 0 auto;
+          .dot {
+            border: 1px solid grey;
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+            border-radius: 100px;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
