@@ -1,8 +1,28 @@
 <%= render 'paradise_share/nav' %>
-<%= render partial: 'paradise_share/header', locals: { header_title: '饮食园地' } %>
+<%= render partial: 'paradise_share/header', locals: { header_title: '健食天地' } %>
 
 
 <main class="main">
+  <section class='slide-container'>
+    <i class='arrow prev'>&lt;</i>
+    <i class='arrow next'>&gt;</i>
+    <ul class='slide'>
+      <li class='slide-item active' id='item1'>slide1</li>
+      <li class='slide-item' id='item2'>slide2</li>
+      <li class='slide-item' id='item3'>slide3</li>
+      <li class='slide-item' id='item4'>slide4</li>
+      <li class='slide-item' id='item5'>slide5</li>
+    </ul>
+    <div class='slide-dot-container'>
+      <ul class='slide-dot'>
+        <li class='dot item1'></li>
+        <li class='dot item2'></li>
+        <li class='dot item3'></li>
+        <li class='dot item4'></li>
+        <li class='dot item5'></li>
+      </ul>
+    </div>
+  </section>
   <section class='cates'>
     <h2 class='section-title'>饮食新资讯</h2>
     <ul>
