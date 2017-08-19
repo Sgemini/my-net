@@ -20,7 +20,7 @@
       }
     }
 
-    .slide-container{
+    #slide-container{
       position: relative;
       .arrow {
         position: absolute;
@@ -78,6 +78,11 @@
           }
         }
       }
+    }
+
+    #season-container {
+      height: 120px;
+      border: 1px solid black;
     }
   }
 
