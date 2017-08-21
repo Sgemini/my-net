@@ -23,31 +23,21 @@
       </ul>
     </div>
   </section>
-  <div id='season-container'>
-    季节
-  </div>
-  <section class='cates'>
-    <h2 class='section-title'>饮食新资讯</h2>
-    <ul>
-      <% @cates.each do |cate| %>
-        <li class='section-item'><a href="/paradise/cates/<%= cate.id %>"+><%= cate.name %></li>
-      <% end %>
+  <section id='week-hot'>
+    <ul class='hot-nav'>
+      <li class='hot-nav-item'>一周热门</li>
+      <li class='hot-nav-item'>热门菜系</li>
+      <li class='hot-nav-item'>热门甜品</li>
     </ul>
-    <a class='more' href="/paradise/cates">更多</a>
   </section>
-  <section class='ingredients'>
-    <h2 class='section-title'>食材新资讯</h2>
-    <ul>
-      <% @ingredients.each do |ingredient| %>
-        <li class='section-item'><%= ingredient.name %></li>
-      <% end %>
-    </ul>
-    <a class='more' href="/paradise/ingredients">更多</a>
+  <section id='seasonal-ingredients'>
+    时令食材
+  </section>
+  <section id='health'>
+    健康小知识
   </section>
 </main>
 
-
-<div class="personal-menu">
-  <%= image_tag("paradise/1.jpeg") %>
-  <%= image_tag("paradise/11.jpeg") %>
-</div>
+<footer>
+  底部
+</footer>

@@ -1,6 +1,7 @@
 #paradise-index {
   .main {
-    padding: 0 10%;
+    width: 1000px;
+    margin: 0 auto;
 
     section {
       margin-bottom: 40px;
@@ -80,8 +81,22 @@
       }
     }
 
-    #season-container {
-      height: 120px;
+    #week-hot {
+      border: 1px solid black;
+      .hot-nav {
+        display: flex;
+        .hot-nav-item {
+          margin-right: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    #seasonal-ingredients {
+      border: 1px solid black;
+    }
+
+    #health {
       border: 1px solid black;
     }
   }

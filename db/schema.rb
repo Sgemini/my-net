@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170609042022) do
+ActiveRecord::Schema.define(version: 20170821064750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,11 +29,18 @@ ActiveRecord::Schema.define(version: 20170609042022) do
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
   end
 
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "cates", id: :serial, force: :cascade do |t|
     t.string "name"
     t.text "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "steps", default: [], array: true
     t.string "nutrition"
     t.string "taste"
@@ -58,8 +65,6 @@ ActiveRecord::Schema.define(version: 20170609042022) do
   create_table "live_tips", id: :serial, force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", id: :serial, force: :cascade do |t|
@@ -69,6 +74,16 @@ ActiveRecord::Schema.define(version: 20170609042022) do
     t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "votes", force: :cascade do |t|
+    t.integer "vote_count"
+    t.bigint "cate_id"
+    t.bigint "article_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["article_id"], name: "index_votes_on_article_id"
+    t.index ["cate_id"], name: "index_votes_on_cate_id"
   end
 
 end
