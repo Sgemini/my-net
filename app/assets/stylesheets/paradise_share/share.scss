@@ -1,13 +1,14 @@
 .paradise {
   header{
     display: flex;
-    margin-top: 40px;
     height: 100px;
     align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
 
     .title {
-      width: 60%;
-      margin-left: 10%;
+      width: 75%;
     }
 
     #search-container {
@@ -51,5 +52,11 @@
         }
       }
     }
+  }
+
+  footer {
+    height: 50px;
+    background: black;
+    color: white;
   }
 }
