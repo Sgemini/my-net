@@ -24,20 +24,22 @@
     </div>
   </section>
   <section id='week-hot'>
-    <ul class='hot-nav'>
-      <li class='hot-nav-item'>一周热门</li>
-      <li class='hot-nav-item'>热门菜系</li>
-      <li class='hot-nav-item'>热门甜品</li>
-    </ul>
+    <h2 class="sub-title">热门菜系</h2>
+    <div class='hot-item-container'>
+      <% hot_cates.each do |h| %>
+        <div class='hot-item'>
+          <img src="" class='hot-item-img' />
+          <%= h.name %>
+        </div>
+      <% end %>
+    </div>
   </section>
   <section id='seasonal-ingredients'>
-    时令食材
+    <h2 class="sub-title">时令食材</h2>
   </section>
   <section id='health'>
-    健康小知识
+    <h2 class="sub-title">健康小知识</h2>
   </section>
 </main>
 
-<footer>
-  底部
-</footer>
+<%= render 'paradise_share/footer' %>
