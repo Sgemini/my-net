@@ -22,6 +22,10 @@ module ParadisesHelper
     end
   end
 
+  def health_article
+    Article.order(created_at: :desc).first(5)
+  end
+
   private
 
   def _season_ingredients(season)

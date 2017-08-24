@@ -37,6 +37,16 @@
   </section>
   <section id='health'>
     <h2 class="sub-title">健康小知识</h2>
+    <ul class='health-articles'>
+      <% health_article.each do |a| %>
+        <li class='article'>
+          <img src="" class='article-img' />
+          <div class='article-info'>
+            <h3><%= a.title %></h3>
+          </div>
+        </li>
+      <% end %>
+    </ul>
   </section>
 </main>
 

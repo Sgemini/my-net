@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-10.times do |t|
+15.times do |t|
   # 食材数据
   c = Cate.create(name: t.to_s + '个赞')
   # 食材点赞
@@ -17,4 +17,7 @@
   Ingredient.create(name: '夏季食材' + t.to_s, season: 'summer')
   Ingredient.create(name: '秋季食材' + t.to_s, season: 'autumn')
   Ingredient.create(name: '冬季食材' + t.to_s, season: 'winter')
+
+  #文章
+  Article.create(title: '健康小知识' + t.to_s)
 end

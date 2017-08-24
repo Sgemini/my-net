@@ -96,6 +96,20 @@
 
     #health {
       border: 1px solid black;
+      .article {
+        margin-bottom: 20px;
+        .article-img {
+          display: inline-block;
+          width: 200px;
+          height: 150px;
+          margin-right: 40px;
+          background: grey;
+        }
+
+        .article-info {
+          display: inline-block;
+        }
+      }
     }
   }
 
