@@ -5,16 +5,25 @@ module ParadisesHelper
 
   def season_ingredients
     time_now = Time.now.strftime("%B %d, %Y")
-    case time_now
-    when time_now > DateTime.new(Time.now.year,3,20) # 春分
+    winter = (DateTime.new(Time.now.last_year.year, 12, 22)..DateTime.new(Time.now.year, 3, 20)).cover?(time_now)
+    spring = (DateTime.new(Time.now.year, 3, 20)..DateTime.new(Time.now.year, 6, 21)).cover?(time_now)
+    summer = (DateTime.new(Time.now.year, 6, 21)..DateTime.new(Time.now.year, 9, 23)).cover?(time_now)
+    autumn = (DateTime.new(Time.now.year, 9, 23)..DateTime.new(Time.now.year, 12, 22)).cover?(time_now)
+
+    case 
+    when spring
       _season_ingredients('spring')
-    when time_now > DateTime.new(Time.now.year,6,21) # 夏至
+    when summer
       _season_ingredients('summer')
-    when time_now > DateTime.new(Time.now.year,9,23) # 秋分
+    when autumn
       _season_ingredients('autumn')
-    when time_now > DateTime.new(Time.now.year,12,22) # 冬至
+    when winter
       _season_ingredients('winter')
     end
+  end
+
+  def health_article
+    Article.order(created_at: :desc).first(5)
   end
 
   private

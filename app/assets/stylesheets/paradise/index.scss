@@ -88,22 +88,6 @@
 
     #week-hot {
       border: 1px solid black;
-
-      .hot-item-container {
-        .hot-item {
-          display: inline-block;
-          width: 230px;
-          height: 300px;
-          margin-right: 15px;
-          text-align: center;
-
-          .hot-item-img {
-            background: grey;
-            width: 100%;
-            height: 200px;
-          }
-        }
-      }
     }
 
     #seasonal-ingredients {
@@ -112,6 +96,20 @@
 
     #health {
       border: 1px solid black;
+      .article {
+        margin-bottom: 20px;
+        .article-img {
+          display: inline-block;
+          width: 200px;
+          height: 150px;
+          margin-right: 40px;
+          background: grey;
+        }
+
+        .article-info {
+          display: inline-block;
+        }
+      }
     }
   }
 

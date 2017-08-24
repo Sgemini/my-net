@@ -26,19 +26,27 @@
   <section id='week-hot'>
     <h2 class="sub-title">热门菜系</h2>
     <div class='hot-item-container'>
-      <% hot_cates.each do |h| %>
-        <div class='hot-item'>
-          <img src="" class='hot-item-img' />
-          <%= h.name %>
-        </div>
-      <% end %>
+      <%= render partial: 'paradise_share/item_container', collection: hot_cates %>
     </div>
   </section>
   <section id='seasonal-ingredients'>
     <h2 class="sub-title">时令食材</h2>
+    <div class='season-item-container'>
+      <%= render partial: 'paradise_share/item_container', collection: season_ingredients %>
+    </div>
   </section>
   <section id='health'>
     <h2 class="sub-title">健康小知识</h2>
+    <ul class='health-articles'>
+      <% health_article.each do |a| %>
+        <li class='article'>
+          <img src="" class='article-img' />
+          <div class='article-info'>
+            <h3><%= a.title %></h3>
+          </div>
+        </li>
+      <% end %>
+    </ul>
   </section>
 </main>
 
