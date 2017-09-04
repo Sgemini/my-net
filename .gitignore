@@ -19,3 +19,9 @@
 # Ignore some not use file
 .DS_Store
 .env
+/public/packs
+/public/assets*
+/node_modules
+/public/packs
+/public/packs-test
+/node_modules
