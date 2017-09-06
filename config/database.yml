@@ -1,5 +1,6 @@
 default: &default
   adapter: postgresql
+  encoding: unicode
   pool: 5
 
 
@@ -18,3 +19,6 @@ test:
 production:
   <<: *default
   database: mynet_production
+  username: <%= ENV['MY_NET_USERNAME'] %>
+  password: <%= ENV['MY_NET_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

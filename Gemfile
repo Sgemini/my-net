@@ -20,11 +20,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'config'
 
 gem 'activeadmin'
-gem 'bcrypt'
 
 gem 'puma'
 
-gem 'webpacker'
+gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
