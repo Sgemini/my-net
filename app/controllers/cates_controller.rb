@@ -1,6 +1,6 @@
 class CatesController < ApplicationController
   def index
-    @cates = Cate.all
+    @factions = Cate.distinct.pluck(:faction).compact
   end
 
   def show

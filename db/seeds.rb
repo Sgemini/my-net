@@ -6,11 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+faction = ['川菜', '鲁菜', '粤菜', '苏菜', '浙菜', '闽菜', '湘菜', '徽菜']
+
 15.times do |t|
   # 食材数据
   c = Cate.create(name: t.to_s + '个赞')
   # 食材点赞
-  Vote.create(vote_count: t, cate_id: c.id)
+  Vote.create(vote_count: t + 100, cate_id: c.id)
 
   # 时令食材
   Ingredient.create(name: '春季食材' + t.to_s, season: 'spring')
@@ -18,6 +20,9 @@
   Ingredient.create(name: '秋季食材' + t.to_s, season: 'autumn')
   Ingredient.create(name: '冬季食材' + t.to_s, season: 'winter')
 
-  #文章
+  # 文章
   Article.create(title: '健康小知识' + t.to_s)
+
+  # 派系
+  Cate.create(name: faction[t], faction: faction[t])
 end
