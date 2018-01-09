@@ -15,13 +15,13 @@ ActiveRecord::Schema.define(version: 20170823034925) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "active_admin_comments", id: :serial, force: :cascade do |t|
+  create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
     t.string "resource_id", null: false
     t.string "resource_type", null: false
-    t.integer "author_id"
     t.string "author_type"
+    t.bigint "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20170823034925) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "cates", id: :serial, force: :cascade do |t|
+  create_table "cates", force: :cascade do |t|
     t.string "name"
     t.text "body"
     t.datetime "created_at", null: false
@@ -47,28 +47,23 @@ ActiveRecord::Schema.define(version: 20170823034925) do
     t.string "faction"
   end
 
-  create_table "cates_ingredients_maps", id: :serial, force: :cascade do |t|
+  create_table "cates_ingredients_maps", force: :cascade do |t|
     t.integer "cate_id"
     t.integer "ingredient_id"
   end
 
-  create_table "ingredients", id: :serial, force: :cascade do |t|
+  create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.string "nutrition"
     t.integer "cate_id"
     t.string "match"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "origin"
     t.string "season"
   end
 
-  create_table "live_tips", id: :serial, force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-  end
-
-  create_table "users", id: :serial, force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password"
     t.string "email"

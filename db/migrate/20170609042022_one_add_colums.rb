@@ -1,4 +1,4 @@
-class OneAddColums < ActiveRecord::Migration[5.0]
+class OneAddColums < ActiveRecord::Migration[5.1]
   def change
     add_column :cates, :steps, :string, array: true, default: []
     add_column :cates, :nutrition, :string

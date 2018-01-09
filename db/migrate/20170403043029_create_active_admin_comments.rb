@@ -1,6 +1,6 @@
 
 
-class CreateActiveAdminComments < ActiveRecord::Migration
+class CreateActiveAdminComments < ActiveRecord::Migration[5.1]
   def self.up
     create_table :active_admin_comments do |t|
       t.string :namespace
@@ -11,8 +11,6 @@ class CreateActiveAdminComments < ActiveRecord::Migration
       t.timestamps null: false
     end
     add_index :active_admin_comments, [:namespace]
-
-    add_index :active_admin_comments, [:author_type, :author_id]
 
     add_index :active_admin_comments, [:resource_type, :resource_id]
   end

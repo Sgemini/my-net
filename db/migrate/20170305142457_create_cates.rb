@@ -1,4 +1,4 @@
-class CreateCates < ActiveRecord::Migration[5.0]
+class CreateCates < ActiveRecord::Migration[5.1]
   def change
     create_table :cates do |t|
       t.string :title
