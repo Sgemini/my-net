@@ -1,0 +1,33 @@
+header{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  .title {
+    width: 75%;
+  }
+}
+
+#search-container {
+  .search-input {
+    height: 35px;
+    margin-right: -5px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    outline: none;
+  }
+
+  .search-button {
+    padding-bottom: 7px;
+    padding-top: 6px;
+    background: grey;
+    color: white;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
