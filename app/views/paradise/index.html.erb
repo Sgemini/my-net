@@ -1,5 +1,5 @@
-<%= render 'paradise_share/nav' %>
-<%= render partial: 'paradise_share/header', locals: { header_title: '健食天地' } %>
+<%= render 'components/nav' %>
+<%= render partial: 'components/header', locals: { header_title: '健食天地' } %>
 
 
 <main class="main">
@@ -26,13 +26,13 @@
   <section id='week-hot'>
     <h2 class="sub-title">热门菜系</h2>
     <div class='hot-item-container'>
-      <%= render partial: 'paradise_share/item_container', collection: hot_cates %>
+      <%= render partial: 'components/item_container', collection: hot_cates %>
     </div>
   </section>
   <section id='seasonal-ingredients'>
     <h2 class="sub-title">时令食材</h2>
     <div class='season-item-container'>
-      <%= render partial: 'paradise_share/item_container', collection: season_ingredients %>
+      <%= render partial: 'components/item_container', collection: season_ingredients %>
     </div>
   </section>
   <section id='health'>
@@ -50,4 +50,4 @@
   </section>
 </main>
 
-<%= render 'paradise_share/footer' %>
+<%= render 'components/footer' %>
