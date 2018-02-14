@@ -1,8 +1,12 @@
 <%= render 'paradise_share/nav' %>
 <%= render partial: 'paradise_share/header', locals: { header_title: '美食百科' } %>
 
-<ul>
-  <% @cates.each do |cate| %>
-    <li><%= cate.name %></li>
-  <% end %>
-<ul>
+<h2 class='prompt'>请选择以下类别，以便于筛选出您喜欢的菜肴</h2>
+
+<div id='factions'>
+  <ul class='all-factions'>
+    <% @factions.each do |faction| %>
+      <li class='faction'><%= faction %></li>
+    <% end %>
+  <ul>
+</div>
