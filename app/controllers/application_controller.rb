@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   end
 
   def set_body_class
-    @body_class = 'paradise' if request.fullpath.include?('paradise')
+    @body_class = 'paradise'
   end
 end
